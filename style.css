@@ -1,0 +1,40 @@
+
+.marco{
+    height: 1000px;
+    width: 1000px;
+    
+    border-color: black;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.pelota{
+    width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     border-radius: 50%;
+     border-radius: 50%;
+     background: #d7e936;
+     animation-name: rebote;
+     animation-duration: 6s;
+     position: relative;
+     animation-timing-function: linear;
+     animation-direction:alternate;
+     animation-iteration-count: infinite;
+     
+}
+
+@keyframes rebote {
+
+    0% {top: 60px; left: 0px;}
+    
+    25%{top: 900px; }
+
+
+    50%{top: 60px;}
+
+    75% {top: 900px; }
+
+    100% {top: 60px; left: 900px;}   
+    
+}
